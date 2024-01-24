@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Unordered List Content</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: auto;
+            margin-top: 5px;
+           
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+
+
+
+        .tables-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        body {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+
+        
+        .underline-above {
+            border-bottom: 5px solid blue;/* You can adjust the color and thickness */
+            display: inline-block; /* Prevents the underline from spanning the full width */
+            padding-bottom: 4px; /* Adjust the spacing between the underline and text */
+            color:deepskyblue;
+            font-weight:bolder;
+            margin-bottom: 5px;
+            word-spacing: 5px;
+             
+        }
+    h5{
+        font-size: larger;
+        font-weight: 200;
+        margin-top: 2px;
+    }
+p{
+    
+}
+
+
+.table-content {
+            font-weight: bold;
+        }
+
+
+.container {
+            display: inline-block; /* Aligns the container as an inline block */
+            text-align: left; /* Aligns the text inside the container to the left */
+            margin-top: 10px; /* Adjust the top margin as needed */
+        }
+
+
+
+
+        .notes{
+            
+            border: 1px solid black;
+            box-sizing: content-box;
+            word-spacing: 2px;
+        }
+
+
+        .table-container.change {
+            margin-left:20px ;
+        }
+       #move{
+        margin-left: 10px;
+       }
+
+    </style>
+</head>
+<body>
+
+    <div class="tables-container"> 
+
+    <div class="table-container">
+
+
+    <h1 class="underline-above" >Appendix A. NetView Functions and Tasks
+
+    </h1>
+    <h5>This section lists NetView functions and tasks.
+    </h5>
+    <h3 class="underline-above">NetView Functions</h3>
+
+    <p>The following table contains some of the NetView functions with information on how they benefit you and <br>where more information can be found.
+    </p>
+
+
+
+<table>
+    <thead>
+    
+    <tr>
+        <th colspan="3"   class="table-content">
+            Table 13. Benefits of Individual NetView Functions</th>
+    </tr>
+</thead>
+        <tr  class="table-content">
+            <td>NetView Function	</td>
+            <td>Benefit to You	</td>
+            <td>Where Documented in NetView Library</td>
+        </tr>
+    
+    <tbody>
+      
+                <tr>
+                    <td>Application<br> programming</td>
+                    <td>Tailor or supplement NetView to satisfy <br>unique requirements or operating procedures.<br> Command procedures can be<br> written in PL/I, C, assembler, REXX, or NetView CLIST languages. <br>Installation exits can be written in PL/I, C, or assembler.</td>
+                    <td>•IBM Z NetView Application Programmer's Guide<br>
+                        •IBM Z NetView Programming: Assembler<br>
+                        •IBM Z NetView Programming: PL/I and C<br>
+                        •IBM Z NetView Programming: REXX and the NetView Command List Language<br>
+                        •IBM Z NetView Programming: Pipes<br>
+                        IBM Z NetView User's Guide: Automated Operations Network</td>
+                </tr>
+                <tr>
+                    <td>Automated <br>operation for <br>networks (AON)</td>
+                    <td>Provides automation for TCP/IP, VTAM, and <br>SNA using NetView AON automation policy</td>
+                    <td>IBM Z NetView User's Guide: Automated<br> Operations Network</td>
+                </tr>
+                <tr>
+                    <td>Browse facility 1</td>
+                    <td>View logs, data sets, and files on either a<br> local or remote NetView</td>
+                    <td>IBM Z NetView User's Guide: NetView</td>
+                </tr>
+                <tr>
+                    <td>Canzlog log</td>
+                    <td>Provides consolidated access to all IBM Z<br> NetView system messages (including the <br>netlog and syslog). The Canzlog log <br>includes expanded access to message <br>attributes and robust filtering to retrieve <br>specific log records. By using the Canzlog <br>function, you can significantly reduce<br> problem determination time. You can <br>archive the Canzlog log for later recall, as<br> needed for audit or further problem<br> analysis.</td><br><br>
+                    <td>•IBM Z NetView Installation: Configuring <br>Additional Components
+                        •IBM Z NetView User's Guide: NetView</td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td>Canzlog Print</td>
+                    <td>By issuing the PRINT command, you can<br> print the specified Canzlog messages to a<br> sequential data set or a member of a<br> partitioned or partitioned extended data <br>set.<br>
+                        It can be issued from one of the following<br> ways:<br>
+                        •NETVIEW operator’s console<br>
+                        •BROWSE window<br>
+                        •Canzlog Panel<br>
+                        The NVINFO command is enhanced to <br>support Canzlog log printing as well.</td>
+                    <td>•IBM Z NetView Administration Reference
+                        •IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                <tr>
+                    <td>CNMSTYLE<br>
+                        migration tool</td>
+                    <td>Creates a report that provides information<br> on the CNMSTYLE member. The report<br> includes the following information:<br>
+                        •Listing of the %INCLUDE structure of the<br> CNMSTYLE member<br>
+                        •Grouping of statements by NetView <br>function<br>
+                        •Grouping of multiple occurrences of<br> statements for quick analysis<br>
+                        •Listing of enabled towers</td>
+                    <td>“Using the Report Generator” on page 60</td>
+                </tr>
+                <tr>
+                    <td>Command facility </td>
+                    <td>Provides basic command support for the <br>NetView product; lets you issue VTAM,<br> MVS, and NetView commands from the <br>NetView command line.</td>
+                    <td>IBM Z NetView User's Guide: NetView</td>
+                </tr>
+                <tr>
+                    <td>Command Statistics</td>
+                    <td>Provides usage statistics for each<br> invocation of a command that runs in the<br> NetView address space</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+
+                <tr>
+                    <td>Discovery manager</td>
+                    <td>Collects sysplex, z/OS image, TCP/IP stack, <br>IP interface, OSA, HiperSockets, NetView<br> program, and Telnet server data for display<br> in the NetView management console and<br> the NetView agent. Provides real-time <br>3270 TCP/IP stack, IP interface, Telnet <br>server, OSA, HiperSockets, and NetView <br>application commands.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>DVIPA support</td>
+                    <td>Collects dynamic virtual IP address<br> (DVIPA) data for display in the NetView <br>agent. Provides real-time 3270 DVIPA<br> commands.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>Event/Automation<br> Service (E/AS)</td>
+                    <td>Serves as a gateway for event data <br>between the IBM Z NetView management<br> environment, managers and agents that <br>handle Event Integration Facility (EIF)<br> events, and SNMP trap managers and <br>agents. With this gateway function, you can<br> manage all network events from the<br> management platform of your choice.</td>
+                    <td>•IBM Z NetView Installation: Configuring<br> Additional Components<br>
+                        •IBM Z NetView User's Guide: NetView</td>
+                </tr>
+                <tr>
+                    <td>Event correlation<br> engine</td>
+                    <td>Maps NetView messages and alerts to <br>events that consist of name and value<br> pairs. These events are made available to<br> correlation automation.</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                <tr>
+                    <td>Extended multiple<br> console support<br> (EMCS) consoles</td>
+                    <td>Provides a consistent MVS operation <br>interface, an alternative to the subsystem <br>interface (SSI)</td>
+                    <td>IBM Z NetView Automation Guide</td>
+                </tr>
+                <tr>
+                    <td>Graphic monitor<br> facility host <br>subsystem (GMFHS)</td>
+                    <td>Interfaces with RODM for the various<br> components of NetView <br>(SNA topology manager, NetView management console,<br> MultiSystem Manager, and NetView resource manager) to manage the <br>resources in your environment</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Graphical Components</td>
+                </tr>
+                <tr>
+                    <td>Hardware monitor</td>
+                    <td>Collects and stores data about failed<br> resources in networks</td>
+                    <td>•IBM Z NetView Installation: Configuring <br>Additional Components<br>
+                        •IBM Z NetView User's Guide: NetView</td>
+                </tr>
+                <tr>
+                    <td>Help facility 1</td>
+                    <td>Provides online help for messages and <br>commands</td>
+                    <td>IBM Z NetView User's Guide: NetView</td>
+                </tr>
+                <tr>
+                    <td>Help desk facility 1</td>
+                    <td>Provides online help for diagnosing<br> problems</td>
+                    <td>IBM Z NetView User's Guide: NetView</td>
+                </tr>
+                <tr>
+                    <td>Intrusion detection<br> services</td>
+                    <td>Defines automated responses to the<br> following items:<br>
+                        •Scans<br>
+                        •Attacks<br>
+                        •Traffic regulation for TCP connections <br>and UDP receive queues<br>
+                        Using notification and inform policies, you <br>can send an e-mail to a security <br>administrator, issue a message, generate <br>an alert or Event Integration Facility (EIF) <br>event, issue commands, or generate a <br>report in response to an intrusion.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td>IP management</td>
+                    <td>Supports management of heterogeneous<br> networks that use both SNA and TCP/IP. <br>NetView IP management capabilities <br>include discovery, connection monitoring,<br> packet collection and analysis, and DVIPA<br> management.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>Message revision <br>table</td>
+                    <td>The message revision table (MRT) enables<br> you to intercept MVS messages before they <br>are displayed, logged, automated, or <br>routed through your sysplex. You can make <br>decisions about the message based on its <br>message ID, job name, and many other <br>properties.</td>
+                    <td>IBM Z NetView Automation Guide</td>
+                </tr>
+                <tr>
+                    <td>MultiSystem <br>Manager</td>
+                    <td>Provides an integrated, centralized<br> network management facility that you can<br> use to manage your non-SNA network resources from a single workstation</td>
+                    <td>•IBM Z NetView Installation: <br>Configuring Graphical Components<br>
+                        •IBM Z NetView User's Guide:<br> NetView Management Console</td>
+                </tr>
+                <tr>
+                    <td>NetView automation </td>
+            
+             <td>Perform repetitive or routine tasks without <br>operator action</td>
+                    <td>IBM Z NetView Automation Guide</td>
+                </tr>
+                <tr>
+                    <td>NetView management console</td>
+                    <td>Displays topology and status information<br> about network and system resources in a <br>graphical format, from any platform <br>enabled by Java™</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Graphical Components</td>
+                </tr>
+                <tr>
+                    <td>NetView MVS command revision table</td>
+                    <td>The NetView MVS command revision table <br>(CRT) enables you to intercept MVS <br>commands before they are processed.<br>
+                        Command sources include the MVS <br>console and the NetView MVS command</td>
+                    <td>IBM Z NetView Automation Guide</td>
+                </tr>
+                <tr>
+                    <td>NetView Resource Manager</td>
+                    <td>Used to graphically monitor and manage <br>NetView task resource utilization and <br>status using the NetView management <br>console. You can monitor all NetView<br> programs in your enterprise using one <br>NetView management console.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Graphical Components</td>
+                </tr>
+                <tr>
+                    <td>REST Server</td>
+                    <td>Externalize NetView functions through <br>Restful APIs. Provides users the <br>capabilities to access NetView from <br>anywhere that can make REST request.<br> This helps facilitates the creation of web <br>applications.</td>
+                    <td>•IBM Z NetView Application Programmer's <br>Guide
+                        •IBM Z NetView Installation: Configuring <br>Additional Components<br>
+                        •IBM Z NetView User's Guide: NetView<br>
+                        •IBM Z NetView Security Reference</td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td>NetView Function</td>
+                    <td>Benefit to You</td>
+                    <td>Where Documented in NetView Library</td>
+                </tr>
+                <tr>
+                    <td>Z NetView <br>Enterprise <br>Management Agent</td>
+                    <td>Used to manage both TCP/IP availability<br> and performance data from a single user <br> interface. The NetView program provides <br> TCP/IP availability data and OMEGAMON<br>  for Networks provides TCP/IP performance <br> data. You can also monitor the health <br> of your NetView system including processor<br>  utilization, storage, message queue count,<br>  input and output <br> message rates, and input and output rates.</td>
+                    <td>IBM Z NetView Installation: Configuring the <br>NetView Enterprise Management Agent</td>
+                </tr>
+                <tr>
+    
+                        <td>Packet trace data</td>
+                        <td>The NetView program provides real-time <br>capture and formatting of IP packet and <br>OSA packet trace data, including both <br>headers and payloads.</td>
+                        <td>IBM Z NetView IP Management</td>
+                        </tr>
+                        <tr>
+                    <td>Program-to-Program<br> Interface (PPI)</td>
+                    <td>Enables user programs to send or receive<br> data buffers from other user programs; <br>also allows system and application <br>programs to send alerts to the hardware<br> monitor</td>
+                    <td>IBM Z NetView Application Programmer's Guide</td>
+                </tr>
+                <tr>
+                    <td>Remote operations</td>
+                    <td>Interact with remote SNA systems without <br>the overhead of cross-domain logons. (The <br>receiver can be an unattended system.)</td>
+                    <td>RMTCMD in the IBM Z NetView Command<br> Reference Volume 2 (O-Z)</td>
+                </tr>
+                <tr>
+                    <td>Resource Object<br> Data Manager <br>(RODM)</td>
+                    <td>Provides a central location for storing,<br> retrieving, and managing operational <br>resource information</td>
+                    <td>•IBM Z NetView Installation: Configuring <br>Graphical Components
+                        •IBM Z NetView Resource Object Data <br>Manager and GMFHS Programmer's <br>Guide</td>
+                </tr>
+                <tr>
+                    <td>Save and restore function</td>
+                    <td>Saves timers, global variables, and focal <br>point information to VSAM and then <br>restores this data when the NetView <br>program is restarted</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                <tr>
+                    <td>Session monitor</td>
+                    <td>Collects and stores data about SNA <br>resources in subarea, Advanced Peer-to-<br> Peer Networking, and mixed networks.</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                <tr>
+                    <td>SNA topology manager</td>
+                    <td>Obtains the status and topology <br>information for SNA subarea and SNA <br>Advanced Peer-to-Peer Networking <br>resources dynamically, for graphical <br>display using the NetView <br>management console</td>
+                    <td>IBM Z NetView SNA Topology Manager <br>Implementation Guide</td>
+                </tr>
+                <tr>
+                    <td>Status monitor</td>
+                    <td>Collects status information about SNA <br>resources in the network</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                <tr>
+                    <td>Subsystem interface (SSI)</td>
+                    <td>Used by MVS operators to send commands <br>to the NetView program and by NetView<br> operators to receive output from<br> commands sent to MVS through the SSI;<br> also can be used to monitor MVS<br> operations, because unsolicited messages <br>are sent to NetView program through the SSI</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>Sysplex management</td>
+                    <td>The NetView program can be used to <br>manage a sysplex from a single point of <br>control</td>
+                    <td>IBM Z NetView IP Management</td>
+                </tr>
+
+                <tr>
+                    <td>TCP/IP connection <br>data collection</td>
+                    <td>Collects TCP/IP connection data to be<br> displayed in NetView workspaces in the <br>Tivoli Enterprise Portal, or on the 3270 <br>console. Performance data collected by <br>IBM OMEGAMON for Networks can also be<br> displayed.</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                <tr>
+                    <td>TESTPORT function</td>
+                    <td>provides monitoring capability for critical<br> ports using the TESTPORT command.<br>
+                        Monitors a port that refuses a connection <br>but appears to be normal when the <br>NETSTAT command is issued.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>TSO command server</td>
+                    <td>Supports operations and procedures that <br>issue commands through TSO.</td>
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>UNIX command server</td>
+                    <td>Enables UNIX commands to be entered <br>from the NetView command line and<br> returns output to the NetView console.</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                
+                <tr>
+                    <td>Web Services Gateway</td>
+                    <td>Provides an open interface into the <br>NetView program to issue commands and <br>receive responses. SOAP is used for <br>communications and uses HTTP or HTTPS <br>as the transport mechanism.</td>
+                    <td>•IBM Z NetView Installation: Configuring <br>Additional Components
+                        •IBM Z NetView Application Programmer's<br> Guide</td>
+                </tr>
+                <tr><td>XCF services</td>
+                    <td>XCF servicesIn sysplex management, z/OS XCF services <br>are used to help initiate resource discovery <br>and facilitate forwarding of management data <br>in the sysplex, and to implement a<br> master NetView program. The master <br>NetView program has the complete view of <br>the sysplex.</td>
+                
+                    <td>IBM Z NetView Installation: Configuring<br> Additional Components</td>
+                </tr>
+                <tr>
+                    <td>zERT data collection</td>
+                    <td>Collects TCP/IP connection security data to<br> be displayed in NetView workspaces in the <br>Tivoli Enterprise Portal, or on the 3270 <br>console.</td>
+                    <td>IBM Z NetView Installation: Configuring <br>Additional Components</td>
+                </tr>
+                </tbody>
+                </table>
+
+</div>
+
+
+                <h1 class="underline-above" >Optional NetView Tasks
+
+                </h1>
+                <h5>Table 14 on page 95 lists the optional NetView tasks and how they are started.
+                </h5>
+            </div>
+            <div class=".table-container ">
+                <table>
+    <thead>
+    
+    <tr>
+        <th colspan="3"   class="table-content">
+            Table 14. Optional NetView Tasks</th>
+    </tr>
+</thead>
+        <tr  class="table-content">
+            <td>Task	</td>
+            <td>Description</td>
+            <td>Started by Default?</td>
+
+            
+        </tr>
+    
+    <tbody>
+
+
+
+
+                <tr>
+                    <td>AAUTCNMI</td>
+                    <td>Passes data to and from the communication network <br>management interface (CNMI). This task is used by the <br>session monitor.</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>AAUTSKLP</td>
+                    <td>Writes data to the session monitor database</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>ALIASAPL</td>
+                    <td>Creates aliases for VTAM resources</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>BNJDSERV</td>
+                    <td>Processes events and alerts. This task is used by the <br>hardware monitor.</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>BNJMNPDA</td>
+                    <td>Receives certain types of locally generated event and<br> statistical records. This task is used by the hardware<br> monitor.</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>CNMCALRT</td>
+                    <td>Receives alerts through the PPI</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>CNMCSSIR</td>
+                    <td>Routes commands and messages to appropriate NetView tasks</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>CNMTAMEL</td>
+                    <td>Receives status changes for resources and forwards them <br>to the NetView management console. This task is needed <br>for LU 6.2 and IP connections to the NetView management <br><br>console server using the NetConv command.</td>
+                    <td>Y</td>
+                </tr> <tr>
+                    <td>domainidBRW</td>
+                    <td>Provides the log-browse facility. The domainid is the<br> NetView domain identifier.</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>domainidLUC</td>
+                    <td>Provides communications between the functions of NetView<br> and their counterparts in other NetView domains. The domainid is the<br> NetView domain identifier. This task is used<br> by the hardware monitor, session monitor, and NetView<br> management console.</td>
+                    <td>Y</td>
+                </tr> <tr>
+                    <td>domainidVMT</td>
+                    <td>Provides communication between NetView and VTAM. The domainid is the <br>NetView domain identifier. This task is used <br>by the status monitor and NetView management console.</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIACBMT</td>
+                    <td>Opens and processes session requests for the NetView <br>domain</td>
+                    <td>Y</td>
+                </tr> <tr>
+                    <td>DSIAL2WS</td>
+                    <td>Provides alert dynamic function for the SNA/6000<br> workstation</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIAMLUT</td>
+                    <td>Receives session awareness and other data from VTAM.<br> This task is used by the session monitor.</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSIATOPT</td>
+                    <td>Performs disk write services for the AUTOTEST command</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSICORSV</td>
+                    <td>Manages the TCP/IP socket interface with the event<br> correlation engin</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSICRTR</td>
+                    <td>Routes data from the CNMI to the appropriate NetView <br>component</td>
+                    <td>Y</td>
+                </tr>
+
+                <tr>
+                    <td>DSIDB2MT
+                    </td>
+                    <td>Provides a DB/2 environment</td>
+                    <td>N</td>
+                </tr> <tr>
+                    <td>DSIELTSK</td>
+                    <td>Provides external SMF logging support</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIGDS</td>
+                    <td>Provides a CNM interface for communication with resources in the network such as service points using the RUNCMD command.</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIGKPMT</td>
+                    <td>Manages start up and shut down for global KEEP message <br>repositories.</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSIHPDST</td>
+                    <td>Provides high performance LU 6.2 communications for <r></r>sending and receiving large amounts of data</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSIIPLOG</td>
+                    <td>Provides system logging for remote users</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSILOG</td>
+                    <td>Writes data to the network log</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSIQTSK</td>
+                    <td>Provides facilities for communicating with the Resource<br> Object Data Manager (RODM)</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIRQJOB</td>
+                    <td>Ensures that the NetView program is known to JES</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIRSH</td>
+                    <td>Enables the RSH server</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIRTTR</td>
+                    <td>Allows the NetView program to receive alerts over a TCP/IP<br> connection</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIRXEXC</td>
+                    <td>Enables the REXEC server</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DSISVRT</td>
+                    <td>Enables the save and restore function for timers, global <br>variables, and focal point information to VSAM</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSITCONT</td>
+                    <td>Enables the collection and querying of connection data<br> using the TCPCONN START, TCPCONN<br> STOP, and TCPCONN
+                        QUERY commands</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSITCPIP</td>
+                    <td>Provides a TCP/IP environment for NetView</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Writes trace data to the trace log</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSITRACE</td>
+                    <td>Sends RMTCMD data to another NetView program and <br>receives responses</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSIUDST</td>
+                    <td>Interfaces with the NetView Web server task</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIWBTSK</td>
+                    <td>Interfaces with the NetView Web server task</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>DSIWTOMT</td>
+                    <td>Processes NetView commands using the WTOR function</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSIXCFMT</td>
+                    <td>START XCFGROUP and STOP XCFGROUP command<br>
+                        processing. Also XCF group exit and message exit event<br> processing</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DSI6DST</td>
+                    <td>Provides management services (MS) transport function for<br> sending and receiving management data</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DUIDGHB</td>
+                    <td>Gets the host name from the IP address NetView<br> management console</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>DUIFSSCO</td>
+                    <td>Provides command and span authorization checking for<br> NetView management console commands and provides<br> other NetView management console-to-NetView or <br>NetView-to-NetView management console communication<br> services</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>EZLTCFG</td>
+                    <td>stores the NetView policy file definitions</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>EZLTDDF</td>
+                    <td>Provides DDF functions for AON</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>EZLTLOG</td>
+                    <td>Provides automation logging functions for AON</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>EZLTSTS</td>
+                    <td>Provides automation status functions for AON</td>
+                    <td>N</td>
+                </tr>
+
+                <tr>
+                    <td>SQLOGTSK</td>
+                    <td>Writes data to a sequential log data set</td>
+                    <td>N</td>
+                </tr><tr>
+                    <td>VPDTASK</td>
+                    <td>Solicits and logs vital product data from network inventory</td>
+                    <td>N</td>
+                </tr>
+                </tbody>
+                </table> 
+                </div>
+
+
+                <div class="table-container ">
+                <h1 class="underline-above" >Automated NetView Tasks
+
+                </h1>
+                <h5>Table 15 on page 97 lists the automated NetView tasks and whether they are started by default.
+                </h5>
+                <table>
+                <thead>
+    
+                    <tr>
+                        <th colspan="3"   class="table-content">
+                            Table 15. Automated NetView Tasks</th>
+                    </tr>
+                </thead>
+            
+
+
+
+
+
+                <tr  class="table-content">
+                    <td>Task</td>
+                    <td>Description</td>
+                    <td>Started by Default?</td>
+                </tr>
+                <tr>
+                    <td>AUTIPMGT</td>
+                    <td>Autotask used to initialize the IP management ACTMON <br>and IDS functions.</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>AUTOAMI</td>
+                    <td>Autotask for Application Management Instrumentation</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>AUTOAON</td>
+                    <td>Autotask to read policy definitions and initialize AON</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>AUTOCMON</td>
+                    <td>Autotask for processing data of Command<br> Statistics function</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>AUTOCSEC</td>
+                    <td>Autotask for connection security information</td>
+                    <td>N</td>
+                </tr>
+
+                <tr>
+                    <td>AUTOCSMF</td>
+                    <td>Autotask for writing data of Command Statistics function to SMF</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>AUTOCT1</td>
+                    <td>Autotask for DVIPA definition and status</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>AUTOCT2</td>
+                    <td>Autotask for DVIPA sysplex distributors, distributed <br>targets, and server health.</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>AUTOCT3</td>
+                    <td>Autotask for DVIPA connections</td>
+                    <td>N</td>
+                </tr>
+
+
+                <tr>
+                    <td>AUTOCT4</td>
+                    <td>Autotask for VIPA routes and distributed DVIPA<br> connection routing</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>AUTOCT5</td>
+                    <td>Autotask for OSA channels and ports.</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>AUTOCT6</td>
+                    <td>Autotask for Telnet servers and Telnet server ports.</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                   <td> AUTOCT7</td>	<td>Autotask for NetView applications.</td><td>Y</td></tr>
+
+                   <tr>
+<td>AUTODCn</td>	<td>Autotask for the NetView agent to collect data</td><td>	N</td></tr>
+
+
+<tr>
+<td>AUTOEDAT</td>	<td>Routes commands and messages to and from the enterprise master NetView program.</td>	<td>Y</td></tr>
+<tr>
+<td>AUTOIPA	</td><td>Autotask for MultiSystem Manager IBM Tivoli Network<br> Manager agent</td> <td>	N</td></tr>
+
+<tr>
+<td>AUTOMSM	</td><td>Autotask for the MultiSystem Manager that is used for<br> alert processing.</td>	<td>N</td></tr>
+
+<tr>
+<td>AUTOMSMD</td>	<td>Autotask for the MultiSystem Manager and is used <br>during GETTOPO command processing.</td>	<td>N</td>
+                </tr>
+
+<tr>
+
+               <td> AUTONALC</td><td> Autotask for the NetView agent</td>	<td>N</td></tr>
+
+               <tr>
+                <td>AUTONRM</td>	<td>Autotask for NetView Resource Manager</td> <td>	N</td></tr>
+
+                <tr>
+                <td>AUTONVSP	</td> <td>Autotask for NetView Web Services Gateway</td>	<td>N</td></tr>
+
+                <tr>
+                <td>AUTOOPKT</td>	<td>Autotask to collect OSA packet trace data for a given TCP/IP stack</td><td>	N</td></tr>
+
+
+
+                <tr>
+                <td>AUTOOPNA</td> <td>	Autotask for MultiSystem Manager Open agent</td><td>	N</td></tr>
+
+                <tr>
+                <td>AUTOPKTS</td>	<td>Autotask to collect IP packet trace data for a given TCP/IP stack</td>	<td>N</td></tr>
+
+
+                <tr>
+                <td>AUTOPORT</td>	<td>Autotask for TESTPORT function</td> <td>N</td></tr>
+                <tr>
+
+                <td>AUTOPSAV</td>	<td>Autotask used with IPTRACE function to store packet trace data as <br>part of the packet trace analysis function.<br> By default the autotask used for this function<br> is AUTOPSAV, but can be changed to another <br>valid autotask to fit your environment.</td><td>	Y</td></tr>
+
+                <tr>
+                <td>AUTOREST</td>	<td>Autotask for REST SERVER CMDSERV RECEIVER</td>	<td>N</td></tr>
+                <tr>
+                <td>AUTOSMF3</td>	<td>Autotask for the CNMSMF3R sample (PPI receiver for SMF records)</td><td>	N</td></tr>
+
+                <tr>
+                <td>AUTOTCPC</td>	<td>Autotask to collect TCP/IP connection data for a given TCP/IP stack</td><td>N</td></tr>
+
+                <tr>
+                <td>AUTOTCPS</td>	<td>Autotask to collect DVIPA configuration changes for a given TCP/IP stack</td>	<td>N</td></tr>
+
+
+                <tr>
+                <td>AUTOTMSI	</td> <td>Autotask for Tivoli Enterprise Monitoring Services</td>	<td>N</td></tr>
+
+                <tr>
+                <td>AUTTRAn	</td><td>Autotasks for concurrent packet trace instances</td>	<td>N</td></tr>
+
+
+                <tr>
+                <td>AUTOVTAC</td>	<td>Autotask for VTAM ACB monitor</td>	<td>N</td></tr>
+
+
+                <tr>
+                <td>AUTOVTDB</td>	<td>Autotask for VTAM ACB monitor</td><td>	N</td></tr>
+
+                <tr>
+                <td>AUTOXCF	</td> <td>Autotask that processes XCF-related commands</td>	<td>Y</td></tr>
+
+                <tr>
+                <td>AUTOXDSC</td>	<td>Routes messages to the sysplex master NetView program</td>	<td>Y</td></tr>
+
+                <tr>
+                <td>AUTO1</td>	<td>Autotask for NetView initialization</td>	<td>Y</td></tr>
+                <tr>
+                <td>AUTO2</td>	<td>Autotask for NetView initialization</td>	<td>Y</td></tr>
+                <tr>
+
+
+                <td>BRIGOPER</td>	<td>Autotask for NetView Bridge</td><td>N</td></tr>
+                <tr>
+
+
+                <td>DBAUTO1</td>	<td>Autotask for NetView VSAM DB automation</td>	<td>Y</td></tr>
+                <tr>
+                <td>DBAUTO2</td>	<td>Autotask for NetView VSAM DB automation</td>	<td>Y</td></tr>
+
+                <tr>
+                <td>DSIIPCHK</td>	<td>Autotask used to perform security checks for DSTs and OPTs that accept<br> connections from TCP/IP</td><td>Y</td></tr>
+
+                <tr>
+                <td>DSILCOPR</td>	<td>Autotask for focal point autodial</td>	<td>Y</td></tr>
+                <tr>
+                <td>DSINVGR</td>	<td>Autotask for NetView generic receiver</td>	<td>N</td></tr>
+
+                <tr>
+                <td>DSIWEB</td>	<td>Autotask for Web server interface functions</td>	<td>N</td></tr>
+
+<tr>
+
+
+               <td> DUIFCSGW</td>	<td>Autotask for common operations services (COS)<br> gateway functions for NetView management console</td>.	<td>N</td></tr>
+
+               <tr>
+                <td>DUIFEAUT</td>	<td>Autotask for GMFHS</td>	<td>N</td></tr>
+
+
+                <tr>
+                <td>DUIFPOLI</td>	<td>Autotask for GMFHS to process NMCSTATUS policy definitions</td><td>	N</td></tr>
+
+                <tr>
+                <td>DVIPAUTO</td>	<td>Autotask on which DVIPA automation runs to handle event processing,<br> forwarding data to the master NetView program, and<br> requesting data from the master NetView<br> program.	</td><td>N</td></tr>
+
+                <tr>
+                <td>DVIPSTAT</td>	<td>Autotask that processes the distributed DVIPA<br> statistics and logs them to sequential data sets</td><td>N</td></tr>
+
+                <tr>
+                <td>FLBTOPO</td>	<td>Autotask to provide SNA topology manager support for subarea<br> and Advanced Peer-to-Peer Networking resources.</td>	<td>N</td></tr>
+
+                <tr>
+                <td>MVSCMDS</td>	<td>Autotask for MVS command revision function</td><td>Y</td></tr>
+                <tr>
+                <td>REMOPER</td>	<td>Autotask for NetView Bridge</td><td>N</td></tr>
+                
+                  
+
+
+
+
+</table>
+
+
+
+
+
+    
+
+
+       
+</div>
+
+
+<div class="notes">
+    Notes:<br>
+    1. For AON autotasks associated with the AON tower,&nbsp; see the &nbsp;EZLOPF member that is included in the DSIOPF member&nbsp;.<br>
+    2. For AON autotasks&nbsp; associated with the AON.SNA subtower, see the FKVOPF member that is included in the DSIOPF <br>member.<br>
+    3. For AON autotasks associated with the AON.TCP subtower, see the FKXOPF member that &nbsp;is included in the DSIOPF<br>member.<br>
+    4. For autotasks associated with the IPMGT tower, see the FKXOPFIP member that is included in the DSIOPF member.<br>
+    5. For MSM autotasks associated with the MSM tower, see the FLCSOPF member that is included in the DSIOPFmember.
+</div>
+</div>
+<div class="change">
+<h3 id="move" align="left">Changing an operator ID</h3><p>
+If you change an operator ID, you might also have to change the corresponding operator ID in other<br> DSIPARM members. For example, the following DSIPARM members might require modifications:<br></p>
+<h3 align="left">NetView style sheet</h3><p align="left">
+    CNMSTYLE and its included members</p>
+    <h3 align="left">NetView command authorization table</h3><p align="left">
+CNMSCAT2 or CNMSCATU member, if the following statement is specified:<br>
+SECOPTS.CMDAUTH=TABLE</p>
+<h3  align="left">Security product definitions for operators</h3><p align="left">
+    CNMSAF2 member (CONNECT statements), if the following statement is specified:<br>
+    SECOPTS.CMDAUTH=SAF.option</p>
+    Important: Do not change the following automated task IDs that are defined in DSIOPF and CNMSAF2 or<br> their included members:<br><br><br><br>
+</div>
+<div><p align="left">
+    AUTOAMI<br><br>
+    AUTOVTAC<br><br> AUTOVTDB <br><br>BRIGOPER <br><br>DSIIPCHK<br> <br>DSILCOPR<br> <br>DSINVGR<br> <br>DSIWEB <br><br>DUIFCSGW<br> <br>DUIFEAUT <br><br>FLBTOPO <br><br>REMOPER <br><br>SYSADMIN<br><br><br><br><br><br></p>
+</div>
+<h1 class="underline-above" >Internal NetView Tasks
+</h1>
+<h5>Table 16 on page 100 lists internal tasks which perform vital NetView services. These tasks automatically start when NetView starts. Do not routinely start or stop them.</h5>
+<table>
+<thead>
+    <th colspan="2">Table 16. Internal NetView Tasks</th></thead>
+    <tbody>
+        <tr class="table-content">
+            <td>Task</td>
+            <td>Description</td>
+        </tr>
+<tr>
+
+      <td> DSIACBMT</td>	<td>NetView main VTAM ACB processing</td></tr>
+      <tr>
+<td>DSIDCBMT</td>	<td>NetView data set management</td></tr>
+
+<tr>
+<td>DSIGKPMT</td>	<td>NetView global keep processing</td></tr>
+
+<tr>
+<td>DSIHLLMT</td>	<td>NetView high-level language, pre-initialized environments</td></tr>
+
+<tr>
+<td>DSILOGMT</td>	<td>NetView log browse synchronization</td></tr>
+
+<tr>
+<td>DSIMONIT</td>	<td>NetView task resource monitoring</td></tr>
+
+<tr>
+<td>DSISTMMT</td>	<td>NetView STOP and MODIFY processing</td></tr>
+
+<tr>
+<td>DSITIMMT</td>	<td>NetView main task auxiliary processing</td></tr>
+<tr>
+<td>DSIXCFMT</td>	<td>NetView XCF processing</td></tr>
+
+    </tbody>
+
+
+
+
+
+</body>
+</html>
